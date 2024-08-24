@@ -265,6 +265,7 @@ li.transition{
         width: 49% !important;
     }
     .footer-center {
+        margin-top: 10px;
         order: 1; 
         width: 100% !important;
         justify-content: center;
