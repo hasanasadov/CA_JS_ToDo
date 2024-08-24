@@ -42,7 +42,9 @@ h1 {
     border-bottom: 2px solid #ddd;
     gap: 20px;
 }
-
+#doneAll{
+    border: none !important;
+}
 #input {
     border: 1px solid #ddd;
     font-size: 1.2rem;
@@ -63,6 +65,7 @@ ul {
 }
 
 li {
+    animation: fade 400ms;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -231,6 +234,39 @@ footer{
         transform: translateY(0%);
     }
 }
+
+
+@keyframes border {
+    0%{
+        border: none;
+    }
+    50%{
+        border:1px solid #444;
+    }
+    100%{
+        border: none;
+    }
+}
+
+button:focus{
+    animation: border 1s;
+}
+
+
 li.transition{
     animation: fade 400ms;
+}
+
+@media (max-width: 500px) {
+    .footer{
+        flex-wrap: wrap;
+    }
+    .footer span ,.clear{
+        width: 49% !important;
+    }
+    .footer-center {
+        order: 1; 
+        width: 100% !important;
+        justify-content: center;
+    }
 }

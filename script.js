@@ -91,7 +91,7 @@ function all(){
                 e.classList.remove("hide");
             }
         })
-    })
+    }) 
 }
 function completed(){
     let completedBtn = document.getElementById("showCompleted")
