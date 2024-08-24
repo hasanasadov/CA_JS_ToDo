@@ -121,7 +121,6 @@ function clearCompleted(){
         })
     })
 }
-
 function addOnEnter() {
     let input = document.getElementById("input");
     let ulList = document.getElementById("list");
@@ -137,6 +136,7 @@ function addOnEnter() {
                 <button class="deleteBtn"><img class="deleteSvg" src="./assets/x.svg" alt=""></button>
             `;
             ulList.append(newLi);
+            newLi.classList.add("transition");
             document.getElementById("input").value = "";
             hover();
             xBtn();
@@ -151,7 +151,6 @@ function addOnEnter() {
         }
     });
 }
-
 
 
 

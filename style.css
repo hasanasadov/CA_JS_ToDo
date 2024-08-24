@@ -198,6 +198,9 @@ footer{
     display: flex;
     flex-direction: column;
     gap: 5px;
+    p:hover{
+        cursor:cell;
+    }
     a{
         color: #999;
         text-decoration: none;
@@ -219,4 +222,15 @@ footer{
     color: #999 !important;
     text-decoration: line-through;
     transition: all 1s;
+}
+@keyframes fade {
+    from{
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}
+li.transition{
+    animation: fade 400ms;
 }
